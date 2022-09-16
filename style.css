@@ -3,5 +3,76 @@ Color Palette:
 background color: #16213E 
 font color: #0F3460       
 secondary color: #533483  
-tertiary color: #E94560    
+tertiary color: #E94560
 */
+
+/* 
+Added sepia animation for images
+@keyframes-https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+*/
+
+
+body{ 
+    background-color: #30e3ca;
+    color: #40514e;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img{
+    width: 100%;
+    height:auto;
+    border-radius: 30px;
+    filter: drop-shadow(.1em .3em .3em #40514e);
+    
+}
+
+header{
+    text-transform: uppercase;
+    margin: 2em 1em;
+    letter-spacing: 8px;
+    text-align: center;
+    
+}
+
+.container{
+    background: transparent;
+    text-align:center;
+    padding:10px 20px; 
+}
+
+a{
+    text-decoration: none;
+    color: #e4f9f5;
+}
+
+.imageCard{
+    margin:2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    animation: imageCardx 10s forwards;
+}
+
+@media (min-width: 768px){
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .imageCard{
+        width: 30%;
+    }
+}
+
+@keyframes imageCardx {
+    from{
+        filter: sepia(0%);
+    }
+    to{
+        filter: sepia(100%);
+    }
+}
+
