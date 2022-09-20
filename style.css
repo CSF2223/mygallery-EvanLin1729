@@ -1,28 +1,48 @@
 /*
 Color Palette:
-background color: #16213E 
-font color: #0F3460       
-secondary color: #533483  
-tertiary color: #E94560
+background color: #25316D
+font color: #5F6F94 
+secondary color: #97D2EC
+tertiary color: #FEF5AC
+other color: dbde1b
 */
 
-/* 
-Added sepia animation for images
-@keyframes-https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
-*/
 
+header {
+    margin: 0.4rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #dbde1b;
+    border-right: 1px solid #dbde1b;
+    border-left: 1px solid #dbde1b;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
 
 body{ 
-    background-color: #30e3ca;
-    color: #40514e;
+    background-image: linear-gradient(#25316D, #5F6F94, #97D2EC, #FEF5AC);
+    color: black;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    margin: 0.4rem;
+    text-align: center;
+    border-bottom: 1px solid #dbde1b;
+    border-right: 1px solid #dbde1b;
+    border-left: 1px solid #dbde1b;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
 }
 
 img{
     width: 100%;
     height:auto;
     border-radius: 30px;
-    filter: drop-shadow(.1em .3em .3em #40514e);
+    filter: drop-shadow(.1em .3em .3em #97D2EC);
     
 }
 
@@ -40,9 +60,15 @@ header{
     padding:10px 20px; 
 }
 
+div {
+  resize: horizontal;
+  overflow: auto;
+}
+
 a{
-    text-decoration: none;
-    color: #e4f9f5;
+
+    color: black;
+    text-decoration: underline;
 }
 
 .imageCard{
@@ -64,15 +90,6 @@ a{
     
     .imageCard{
         width: 30%;
-    }
-}
-
-@keyframes imageCardx {
-    from{
-        filter: sepia(0%);
-    }
-    to{
-        filter: sepia(100%);
     }
 }
 
